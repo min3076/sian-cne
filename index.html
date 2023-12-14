@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문항예시(라디오 - row)</title>
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/question.css">
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="/js/include.js"></script>
+</head>
+<style>
+@font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+    .wrap{width:100%;height:13262px;}
+    .wrap img{position: absolute;z-index:0;}
+    p{z-index:100;position:absolute;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;font-size:40px;line-height:1.6;text-align:center;font-family: 'EliceDigitalBaeum_Bold';color:#fff}
+    #video_area {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+    top:6480px
+}
+#background_video {
+    z-index: 1;
+    width: 100vw;
+    position: absolute;
+}
+#video_area::before{z-index:100;content:'';position:absolute;display:block;width:100%;height:1080px;background: rgba(12, 34, 114, 0.80);}
+</style>
+<body>
+<div class="wrap">
+<div id="video_area">
+    <p>한글의 이해를 돕고 문해력을 키우며<br>
+        학력향상은 물론 정서적 안정적 발달을 돕습니다.</p>
+    <video src="images/mv.mp4" id="background_video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" volume="0"></video>
+</div>
+
+
+
+<img src="images/intro.png">
+</body>
+</html>

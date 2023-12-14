@@ -1,0 +1,92 @@
+@charset "UTF-8";
+:root {
+	/* Primary - color */
+	--c_primary : #0098ED;
+	--c_primary_m : #2A3E6C;
+	--c_primary_p10 : #E7F3FF;
+
+	--c_mint : #57BBAD;
+
+	--c_white_p40 : rgba(255, 255, 255, 0.40);
+	--c_white_p60 : rgba(255, 255, 255, 0.60);
+
+	--c_bg_gray:#F4F5F6;
+	--c_bg_gray_m:#DEE4E8;
+
+	--c_gray40:#CED4DA;
+	--c_gray50:#8D9BA8;
+	--c_gray70:#495057;
+	
+
+	--f_nsN:'NanumSquareNeo';
+	--f_nsR:'NanumSquareRound';
+	--ani_time:.3s;
+	--load_time:3s;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	--c_blue : #4D8DE7;
+	--c_yellow : #FEC637;
+	--c_pink : #FF82BB;
+
+	/* Primary - color - more */
+	--c_blue_m : #206CD8;
+	--c_yellow_m : #E7A702;
+	--c_pink_m : #FF1286;
+	--c_mint_m : #00B799;
+
+	/* Primary - color - 30 */
+	--c_blue_3 : #250088;
+	--c_yellow_3 : #FFDC81;
+	--c_pink_3 : #FFCFE5;
+	--c_mint_3 : #BFE5D0;
+
+	/* Primary - color - 20 */
+	--c_blue_2 : #250088;
+	--c_yellow_2 : #FFF9C6;
+	--c_pink_2 : #FFDDEC;
+	--c_mint_2 : #D5EEE0;
+
+	/* Primary - color - 10 */
+	--c_blue_1 : #F0F6FC;
+	--c_yellow_1 : #FFFCE2;
+	--c_pink_1 : #FFEFF6;
+	--c_mint_1 : #EFFDF4;
+
+	/* point - color */
+	--c_orange : #FF7754;
+	--c_skyblue : #1AD5D1;
+	--c_deepblue : #000E3E;
+	
+	/* bg / line - color */
+	--bg_body : #F5F7FB;
+	--line_gray:#cacaca;
+
+
+	
+}
+
+.c_blue {color:var(--c_blue);} /* 적용예시 */
+
+.f36 {font-size:36px; line-height: 1;font-weight:800} /* h2 */
+.f24 {font-size: 24px; line-height: 1;font-weight:800} /* h3 */
+.f20 {font-size: 20px; line-height: 1;font-weight:800}
+.f16 {font-size: 16px; line-height: 1;font-weight:800}
+.f15 {font-size: 15px; line-height: 1;font-weight:800}
+
+.f16_r {font-size: 16px; line-height: 1;font-weight:400}
+.f15_r {font-size: 15px; line-height: 1;font-weight:400}
+
+.f15_p {font-size: 15px; line-height:150%;font-weight:400}
