@@ -30,12 +30,8 @@
   position: absolute;
     top:6480px
 }
-#background_video {
-    z-index: 1;
-    width: 100vw;
-    position: absolute;
-}
-#video_area::before{z-index:100;content:'';position:absolute;display:block;width:100%;height:1080px;background: rgba(12, 34, 114, 0.8);}
+#background_video {z-index: 1;position: absolute;top:-100px;left: 50%;transform:translateX(-50%);width: 100vw;}
+#video_area::before{z-index:100;content:'';position:absolute;display:block;width:100%;height:100vh;background: rgba(12, 34, 114, 0.8);}
 </style>
 <body>
 <div class="wrap">
@@ -51,10 +47,10 @@
 
 <map name="image-map">
     <area target="_parent" alt="향상지원센터" title="향상지원센터" href="sub1.html" coords="889,8218,1035,8256" shape="rect">
-    <area target="_parent" alt="온채움" title="온채움" href="sub2.html" coords="879,9430,1040,9481" shape="0">
+    <!-- <area target="_parent" alt="온채움" title="온채움" href="" onclick="alert('디자인시안 준비중')" coords="879,9430,1040,9481" shape="0"> -->
     <area target="_parent" alt="온한글" title="온한글" href="sub3.html" coords="880,10497,1036,10544" shape="0">
     <area target="_parent" alt="온생각" title="온생각" href="sub4.html" coords="882,11540,1040,11590,884,12629,1038,12675" shape="0">
-    <area target="_parent" alt="온샘" title="온샘" href="sub5.html" coords="1041,12673,877,12626" shape="0">
+    <!-- <area target="_parent" alt="온샘" title="온샘"href="" onclick="alert('디자인시안 준비중')" coords="1041,12673,877,12626" shape="0"> -->
 </map>
 </body>
 </html>
