@@ -1,56 +1,79 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>학력향상지원센터</title>
-
-    <link rel="stylesheet" href="/css/common.css">
-    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="/js/include.js"></script>
+  <meta charset="UTF-8">
+  <title>CodePen - Parallax scroll animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  
 </head>
-<style>
-@font-face {
-    font-family: 'EliceDigitalBaeum_Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EliceDigitalBaeum_Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-    .wrap{width:100%;height:13262px;}
-    .wrap img{position: absolute;z-index:0;}
-    p{z-index:100;position:absolute;width:100%;height:100vh;display:flex;align-items:center;justify-content:center;font-size:44px;line-height:1.6;text-align:center;font-family: 'EliceDigitalBaeum_Bold';color:#fff}
-    #video_area {
-  padding: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  position: absolute;
-    top:6480px
-}
-#background_video {z-index: 1;position: absolute;top:-100px;left: 50%;transform:translateX(-50%);width: 120vw;}
-#video_area::before{z-index:100;content:'';position:absolute;display:block;width:100%;height:100vh;background: rgba(12, 34, 114, 0.8);}
-</style>
 <body>
-<div class="wrap">
-<div id="video_area">
-    <p>한글의 이해를 돕고 문해력을 키우며<br>
-        학력향상은 물론 정서적 안정적 발달을 돕습니다.</p>
-    <video src="images/mv.mp4" id="background_video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" volume="0"></video>
+
+<div id="wrap">
+    <i class="obj cir_blue"></i>
+    <i class="obj slash"></i>
+    <section class="sec1">
+        <div class="inner">
+            <i class="obj cir_red"></i>
+            <i class="obj sqa"></i>
+            <i class="obj cir_yellow"></i>
+            <i class="obj star"></i>
+            <i class="obj cir"></i>
+            <h2 class="sec1_tit1">출발선이 평등한</h2>
+            <h2 class="sec1_tit2">행복한 충남교육</h2>
+            <h2 class="sec1_tit3">
+                <span class="on0">
+                    <span class="on_kor">
+                        <span class="on_switch"><span class="slide"></span></span>
+                        <span class="on_kor_txt"></span>
+                    </span>
+                    <span class="on_en"></span>
+                </span>
+                <span class="on1">
+                    <span class="on_txt">on</span>
+                    <span class="txt">으로 시작합니다.</span>
+                </span>
+                <span class="on"><span class="on_txt_kor"></span></span>
+                <span class="logo_copy">
+                    <span class="txt1">디지털기반 학력향상</span>
+                    <span class="txt2">시스템</span>
+                </span>
+            </h2>
+            <div class="mv">
+                <p class="text1">한글의 이해를 돕고 문해력을 키우며</p>
+                <p class="text2">학력향상은 물론 정서적 안정적 발달을 돕습니다.</p>
+                <div id="video_area"><video src="images/mv.mp4" id="background_video" preload="auto" autoplay="autoplay" loop="loop" muted="muted" volume="0"></video></div>
+            </div>
+        </div>
+    </section>   
+    
+    <div class="scrollElement"></div>
+    <section class="sec2">
+        <header>
+            <h1 class="logo">향상지원센터</h1>
+            <nav>
+                <a href="#">향상지원센터</a>
+                <a href="#">온채움</a>
+                <a href="#">온한글</a>
+                <a href="#">온생각</a>
+                <a href="#">온샘</a>
+            </nav>
+        </header>
+        <div class="inner">
+            <h2>단 한명의 학생도 놓치지 않는 충남교육<br>
+            기초학력보장, 한글해득 완성, 의사소통 능력신창<br>
+            <em>학력향상지원센터</em>가 함께합니다.</h2>
+            <div class="lnk">
+                <b>학력향상지원센터</b>
+                <a href="#">바로가기</a>
+            </div>
+            <div class="con"></div>
+        </div>
+    </section> 
 </div>
 
+<script type="text/javascript" src="script.js"></script>
 
-
-<img src="images/intro.png" usemap="#image-map">
-
-<map name="image-map">
-    <area target="_parent" alt="향상지원센터" title="향상지원센터" href="sub1.html" coords="889,8218,1035,8256" shape="rect">
-    <!-- <area target="_parent" alt="온채움" title="온채움" href="" onclick="alert('디자인시안 준비중')" coords="879,9430,1040,9481" shape="0"> -->
-    <area target="_parent" alt="온한글" title="온한글" href="sub3.html" coords="880,10497,1036,10544" shape="0">
-    <area target="_parent" alt="온생각" title="온생각" href="sub4.html" coords="882,11540,1040,11590,884,12629,1038,12675" shape="0">
-    <!-- <area target="_parent" alt="온샘" title="온샘"href="" onclick="alert('디자인시안 준비중')" coords="1041,12673,877,12626" shape="0"> -->
-</map>
 </body>
 </html>
