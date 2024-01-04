@@ -114,8 +114,6 @@ scene1.to('.text1', {opacity:1,delay:1000,duration:600,y:-200})
 scene1.to('.text2', {opacity:1,delay:1000,duration:600,y:-100,ease: "power2.out",})
 
 
-/* Clouds  */
-/*   Bird   */
 gsap.fromTo(".sec2 header", { opacity: 0,  y: 60,}, {
   y: 0,
   x: 0,
