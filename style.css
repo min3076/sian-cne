@@ -14,7 +14,6 @@
 	padding:0;
 	box-sizing:border-box;
 	-webkit-touch-callout:none;
-  box-sizing:border-box
 }
 a {
 	color:#666;
@@ -31,7 +30,7 @@ em{font-style:normal;}
 
 body {color:#424242; background:#fff}
 #wrap {position:relative;width:100%;}
-#wrap .pin-spacer{height:2000px!important;}
+/* #wrap .pin-spacer{height:2000px!important;} */
 #wrap section {overflow:hidden; position:relative; width:100%; height:100vh; border-bottom:1px dotted #ddd}
 #wrap section .inner {width:100%; height:100%; display:flex; align-items: center; justify-content: center;}
 
